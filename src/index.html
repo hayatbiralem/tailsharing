@@ -7,34 +7,8 @@
   </head>
   <body>
     <!-- Section 1 -->
-    <section
-      class="w-full bg-white"
-      x-data="{
-  platforms: [
-  {
-  'id': 'facebook',
-  'name': 'Facebook',
-  'path': 'M379 22v75h-44c-36 0-42 17-42 41v54h84l-12 85h-72v217h-88V277h-72v-85h72v-62c0-72 45-112 109-112 31 0 58 3 65 4z',
-  'template': 'https://facebook.com',
-  'selected': true
-  },
-  {
-  'id': 'twitter',
-  'name': 'Twitter',
-  'path': 'M481 117c-12 18-28 34-46 47v12c0 122-93 263-262 263-53 0-101-15-142-42a191 191 0 0 0 137-38c-41-1-75-27-87-64l18 2c8 0 16-2 24-4-42-8-74-45-74-90v-1c12 7 27 11 42 11A92 92 0 0 1 62 90c46 56 114 93 191 97a92 92 0 0 1 157-84c21-5 41-12 59-23-7 21-22 39-41 51 19-2 37-7 53-14z',
-  'template': 'https://twitter.com',
-  'selected': true
-  },
-  {
-  'id': 'linkedin',
-  'name': 'Linkedin',
-  'path': 'M136 183v283H42V183h94zm6-88c1 27-20 49-53 49-32 0-52-22-52-49 0-28 21-49 53-49s52 21 52 49zm333 208v163h-94V314c0-38-13-64-47-64-26 0-42 18-49 35-2 6-3 14-3 23v158h-94V183h94v41c12-20 34-48 85-48 62 0 108 41 108 127z',
-  'template': 'https://twitter.com',
-  'selected': false
-  }
-  ]
-  }"
-    >
+    <section class="w-full bg-white" x-data="page()" x-init="init($refs)">
+      <p x-text="output"></p>
       <div class="mx-auto">
         <div class="flex flex-col lg:flex-row">
           <div
@@ -43,8 +17,7 @@
               w-full
               lg:min-h-screen
               bg-cover
-              lg:w-6/12
-              xl:w-7/12
+              lg:w-4/12
               bg-gradient-to-r
               from-white
               via-white
@@ -59,10 +32,9 @@
                 justify-center
                 w-full
                 h-full
-                px-10
-                my-20
-                lg:px-16
-                lg:my-0
+                p-6
+                lg:p-8
+                xl:p-12
               "
             >
               <div
@@ -75,7 +47,10 @@
                 "
               >
                 <div class="relative">
-                  <p class="mb-2 font-medium text-gray-700 uppercase">
+                  <p
+                    class="mb-2 font-medium"
+                    :class="'text-' + primaryColor + '-600'"
+                  >
                     Tailwind CSS
                   </p>
                   <h2 class="text-5xl font-bold text-gray-900 xl:text-6xl">
@@ -83,7 +58,7 @@
                   </h2>
                 </div>
                 <p class="text-2xl text-gray-700">
-                  We've created a simple tool to make your own sharing buttons
+                  I've created a simple tool to make your own sharing buttons
                   based on Tailwind CSS without any JavaScript dependency, just
                   plain HTML.
                 </p>
@@ -98,18 +73,17 @@
                     text-center text-white
                     transition
                     duration-200
-                    bg-blue-600
                     rounded-lg
-                    hover:bg-blue-700
                     ease
                   "
+                  :class="'bg-' + primaryColor + '-600' + ' ' + 'hover:bg-' + primaryColor + '-700'"
                   >Donate</a
                 >
               </div>
             </div>
           </div>
 
-          <div class="w-full lg:min-h-screen bg-white lg:w-6/12 xl:w-5/12">
+          <div class="w-full lg:min-h-screen bg-white lg:w-8/12">
             <div
               class="
                 flex flex-col
@@ -117,15 +91,17 @@
                 justify-center
                 w-full
                 h-full
-                p-10
-                lg:p-16
-                xl:p-24
+                p-6
+                lg:p-8
+                xl:p-12
               "
             >
               <div class="relative w-full space-y-8">
                 <div class="relative">
                   <label class="font-medium text-gray-900">URL</label>
                   <input
+                    x-model="url"
+                    x-ref="url"
                     type="text"
                     class="
                       block
@@ -138,14 +114,17 @@
                       bg-gray-200
                       rounded-lg
                       focus:outline-none
-                      focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50
+                      focus:ring-4 focus:ring-opacity-50
                     "
+                    :class="'focus:ring-' + primaryColor + '-600'"
                     placeholder="Enter your URL"
                   />
                 </div>
                 <div class="relative">
                   <label class="font-medium text-gray-900">Text</label>
                   <textarea
+                    x-model="text"
+                    x-ref="text"
                     class="
                       block
                       w-full
@@ -157,54 +136,281 @@
                       bg-gray-200
                       rounded-lg
                       focus:outline-none
-                      focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50
+                      focus:ring-4 focus:ring-opacity-50
                     "
+                    :class="'focus:ring-' + primaryColor + '-600'"
                     placeholder="Enter your text"
                   ></textarea>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-8">
+                  <div class="relative">
+                    <label class="font-medium text-gray-900"
+                      >Primary color</label
+                    >
+                    <div class="mt-2">
+                      <!-- This example requires Tailwind CSS v2.0+ -->
+                      <div>
+                        <div class="mt-1 relative">
+                          <button
+                            type="button"
+                            class="
+                              relative
+                              w-full
+                              bg-white
+                              border-2 border-gray-300
+                              rounded-md
+                              shadow-sm
+                              pl-2
+                              pr-10
+                              py-1
+                              text-left
+                              cursor-default
+                              focus:outline-none
+                              transition
+                              duration-200
+                            "
+                            :class="'hover:text-' + primaryColor + '-700 ' + 'focus:text-' + primaryColor + '-700 hover:border-' + primaryColor + '-700 focus:border-' + primaryColor + '-700'"
+                            aria-haspopup="listbox"
+                            aria-expanded="true"
+                            aria-labelledby="listbox-label"
+                            @focus="primaryColorOpen = true"
+                            @blur="setTimeout(function(){ primaryColorOpen = false }, 300)"
+                          >
+                            <span class="flex items-center">
+                              <span class="block" x-text="primaryColor"></span>
+                            </span>
+                            <span
+                              class="
+                                ml-3
+                                absolute
+                                inset-y-0
+                                right-0
+                                flex
+                                items-center
+                                pr-2
+                                pointer-events-none
+                              "
+                            >
+                              <!-- Heroicon name: solid/selector -->
+                              <svg
+                                class="h-5 w-5 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </button>
+                          <ul
+                            class="
+                              absolute
+                              z-10
+                              mt-1
+                              min-w-full
+                              bg-white
+                              shadow-lg
+                              max-h-56
+                              rounded-md
+                              py-1
+                              ring-1 ring-black ring-opacity-5
+                              overflow-auto
+                              focus:outline-none
+                            "
+                            :class="primaryColorOpen ? '' : 'hidden'"
+                            tabindex="-1"
+                            role="listbox"
+                            aria-labelledby="listbox-label"
+                            aria-activedescendant="listbox-option-3"
+                          >
+                            <template x-for="color in colors" :key="color">
+                              <li
+                                class="
+                                  text-gray-900
+                                  cursor-default
+                                  select-none
+                                  relative
+                                  py-1
+                                  pl-2
+                                  pr-9
+                                "
+                                @click="primaryColor = color; primaryColorOpen = false"
+                                id="listbox-option-0"
+                                role="option"
+                              >
+                                <div class="flex items-center">
+                                  <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                                  <span
+                                    class="block"
+                                    x-text="color"
+                                    :class="color === primaryColor ? 'font-semibold text-' + primaryColor + '-600 ' : 'font-normal'"
+                                  ></span>
+                                </div>
+                                <span
+                                  class="
+                                    absolute
+                                    inset-y-0
+                                    right-0
+                                    flex
+                                    items-center
+                                    pr-4
+                                  "
+                                  :class="'text-' + primaryColor + '-600 ' + (color === primaryColor ? '' : 'hidden')"
+                                >
+                                  <!-- Heroicon name: solid/check -->
+                                  <svg
+                                    class="h-5 w-5"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                      clip-rule="evenodd"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
+                            </template>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label class="font-medium text-gray-900">Size</label>
+                    <div class="mt-2">
+                      <template x-for="size in sizes" :key="size.id">
+                        <button
+                          class="
+                            inline-block
+                            transition
+                            duration-200
+                            rounded-lg
+                            border-2
+                            ease
+                            mr-1
+                            mb-1
+                            py-1
+                            px-2
+                          "
+                          @click="selectedSize = size"
+                          x-text="size.name"
+                          :class="selectedSize.id === size.id ? 'text-white border-' + primaryColor + '-600 bg-' + primaryColor + '-600 hover:bg-' + primaryColor + '-700 hover:border-' + primaryColor + '-700' : 'text-slate-600 border-slate-600 hover:border-' + primaryColor + '-700 hover:text-' + primaryColor + '-700'"
+                        ></button>
+                      </template>
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label class="font-medium text-gray-900">Label</label>
+                    <div class="mt-2">
+                      <template x-for="label in labels" :key="label.id">
+                        <button
+                          class="
+                            inline-block
+                            transition
+                            duration-200
+                            rounded-lg
+                            border-2
+                            ease
+                            mr-1
+                            mb-1
+                            py-1
+                            px-2
+                          "
+                          @click="selectedLabel = label"
+                          x-text="label.name"
+                          :class="selectedLabel.id === label.id ? 'text-white border-' + primaryColor + '-600 bg-' + primaryColor + '-600 hover:bg-' + primaryColor + '-700 hover:border-' + primaryColor + '-700' : 'text-slate-600 border-slate-600 hover:border-' + primaryColor + '-700 hover:text-' + primaryColor + '-700'"
+                        ></button>
+                      </template>
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <label class="font-medium text-gray-900"
+                      >Border radius</label
+                    >
+                    <div class="mt-2">
+                      <template x-for="radius in borderRadius" :key="radius.id">
+                        <button
+                          class="
+                            inline-block
+                            transition
+                            duration-200
+                            rounded-lg
+                            border-2
+                            ease
+                            mr-1
+                            mb-1
+                            py-1
+                            px-2
+                          "
+                          @click="selectedBorderRadius = radius"
+                          x-text="radius.name"
+                          :class="selectedBorderRadius.id === radius.id ? 'text-white border-' + primaryColor + '-600 bg-' + primaryColor + '-600 hover:bg-' + primaryColor + '-700 hover:border-' + primaryColor + '-700' : 'text-slate-600 border-slate-600 hover:border-' + primaryColor + '-700 hover:text-' + primaryColor + '-700'"
+                        ></button>
+                      </template>
+                    </div>
+                  </div>
                 </div>
                 <div class="relative">
                   <label class="font-medium text-gray-900"
                     >Social networks</label
                   >
-                  <div class="mt-2">
-                    <!-- Active Button Boilerplate -->
-                    <!-- 
-<button class="inline-block p-4 transition duration-200 rounded-lg ease text-white bg-blue-600 hover:bg-blue-700">
-<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
-</button>
--->
-                    <template x-for="platform in platforms">
-                      <button
+                  <div class="mt-2" x-ref="items">
+                    <template x-for="platform in platforms" :key="platform.id">
+                      <a
                         class="
-                          inline-block
-                          p-4
+                          inline-flex
+                          items-center
                           transition
                           duration-200
-                          rounded-lg
                           border-2
                           ease
                           mr-1
+                          mb-1
                         "
-                        x-on:click="platform.selected = ! platform.selected"
-                        :class="platform.selected ? 'text-white border-blue-600 bg-blue-600 hover:bg-blue-700 hover:border-blue-700' : 'text-slate-600 border-slate-600 hover:border-blue-700 hover:text-blue-700'"
+                        :class="selectedLabel.sharingButtonClasses[selectedSize.id] + ' ' + selectedBorderRadius.classes[selectedSize.id] + ' ' + ( platform.selected ? 'text-white border-' + primaryColor + '-600 bg-' + primaryColor + '-600 hover:bg-' + primaryColor + '-700 hover:border-' + primaryColor + '-700' : 'text-slate-600 border-slate-600 hover:border-' + primaryColor + '-700 hover:text-' + primaryColor + '-700' )"
+                        :href="$href(platform.template, url, text)"
+                        :data-selected="platform.selected ? 'true' : 'false'"
+                        target="_blank"
+                        rel="noopener"
+                        :aria-label="platform.extendedLabelPrefix + ' ' + platform.name"
+                        @click.prevent="platform.selected = ! platform.selected"
                       >
                         <svg
-                          class="w-6 h-6"
+                          :class="selectedSize.iconClasses"
                           aria-hidden="true"
                           fill="currentColor"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
                         >
                           <title x-text="platform.name" />
-                          <path x-bind:d="platform.path" />
+                          <path :d="platform.path" />
                         </svg>
-                      </button>
+                        <span
+                          :class="selectedLabel.id === 'on' ? selectedLabel.iconLabelClasses[selectedSize.id] : 'hidden'"
+                          x-text="platform.name"
+                        ></span>
+                        <span
+                          :class="selectedLabel.id === 'extended' ? selectedLabel.iconLabelClasses[selectedSize.id] : 'hidden'"
+                          x-text="platform.extendedLabelPrefix + ' ' + platform.name"
+                        ></span>
+                      </a>
                     </template>
                   </div>
+                  <p class="text-sm mt-1">
+                    You can drag and drop platforms to sort them.
+                  </p>
                 </div>
                 <div class="relative grid grid-cols-2 gap-3">
-                  <a
-                    href="#_"
+                  <button
                     class="
                       inline-block
                       w-full
@@ -215,84 +421,546 @@
                       text-center text-white
                       transition
                       duration-200
-                      bg-blue-600
                       rounded-lg
-                      hover:bg-blue-700
                       ease
                     "
-                    >Copy</a
+                    :class="'bg-' + primaryColor + '-600 hover:bg-' + primaryColor + '-700'"
+                    @click="$copy($refs)"
                   >
+                    Copy
+                  </button>
+                  <form
+                    action="https://codepen.io/pen/define"
+                    method="POST"
+                    target="_blank"
+                  >
+                    <input type="hidden" name="data" x-ref="codepenData" />
+
+                    <button
+                      class="
+                        inline-block
+                        w-full
+                        px-5
+                        py-4
+                        text-lg
+                        font-bold
+                        text-center text-gray-900
+                        transition
+                        duration-200
+                        bg-white
+                        border border-gray-300
+                        rounded-lg
+                        hover:bg-gray-100
+                        ease
+                      "
+                      type="submit"
+                      @click="$refs.codepenData.value = $codepen($refs)"
+                    >
+                      View on Codepen
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="w-full mt-auto pt-8">
+                <p>
+                  Created by
                   <a
-                    href="#_"
-                    class="
-                      inline-block
-                      w-full
-                      px-5
-                      py-4
-                      text-lg
-                      font-bold
-                      text-center text-gray-900
-                      transition
-                      duration-200
-                      bg-white
-                      border border-gray-300
-                      rounded-lg
-                      hover:bg-gray-100
-                      ease
-                    "
-                    >Show</a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://twitter.com/hayatbiralem"
+                    >Ömür Yanıkoğlu @hayatbiralem</a
+                  >.
+                </p>
+                <p class="text-sm mt-5">
+                  If you like it, consider
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://www.patreon.com/hayatbiralem"
+                    >donating</a
+                  >. You can
+                  <a
+                    class="hover:underline"
+                    href="https://github.com/hayatbiralem/tailwind-css-sharing-buttons/issues"
+                    >open an issue</a
                   >
-                </div>
-                <div>
-                  <p>
-                    Created by
-                    <a
-                      class="text-blue-600 hover:text-blue-700 hover:underline"
-                      href="https://twitter.com/hayatbiralem"
-                      >Ömür Yanıkoğlu @hayatbiralem</a
-                    >
-                  </p>
-                  <p class="text-sm border-t border-gray-200 pt-5 mt-5">
-                    Attributions:
-                    <a
-                      class="text-blue-600 hover:text-blue-700 hover:underline"
-                      href="https://sharingbuttons.io/"
-                      >Sharingbuttons.io</a
-                    >
-                    <a
-                      class="text-blue-600 hover:text-blue-700 hover:underline"
-                      href="https://tailwindcss.com/"
-                    >
-                      Tailwind CSS</a
-                    >,
-                    <a
-                      class="text-blue-600 hover:text-blue-700 hover:underline"
-                      href="https://devdojo.com/tails"
-                      >DevDojo Tails</a
-                    >,
-                    <a
-                      class="text-blue-600 hover:text-blue-700 hover:underline"
-                      href="https://alpinejs.dev/"
-                      >Alphine.js</a
-                    >,
-                    <a
-                      class="text-blue-600 hover:text-blue-700 hover:underline"
-                      href="https://icomoon.io/"
-                      >IcoMoon</a
-                    >,
-                    <a
-                      class="text-blue-600 hover:text-blue-700 hover:underline"
-                      href="https://jakearchibald.github.io/svgomg/"
-                      >SVGOM</a
-                    >
-                  </p>
-                </div>
+                  on the
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://github.com/hayatbiralem/tailwind-css-sharing-buttons"
+                    >Github repo</a
+                  >
+                  to give feedback.
+                </p>
+                <p class="text-xs border-t border-gray-200 pt-5 mt-5">
+                  Attributions:
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://sharingbuttons.io/"
+                    >Sharingbuttons.io</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://tailwindcss.com/"
+                  >
+                    Tailwind CSS</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://tailwindui.com/"
+                  >
+                    Tailwind UI</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://devdojo.com/tails"
+                    >DevDojo Tails</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://alpinejs.dev/"
+                    >Alphine.js</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://icomoon.io/"
+                    >IcoMoon</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://jakearchibald.github.io/svgomg/"
+                    >SVGOM</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://github.com/SortableJS/Sortable"
+                    >SortableJS</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://stackoverflow.com/a/67176013/1227926"
+                    >Clément Baconnier</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                    >Live Server</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://stackoverflow.com/a/60338028/1227926"
+                    >michal.jakubeczy</a
+                  >,
+                  <a
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    href="https://blog.codepen.io/documentation/prefill/"
+                    >Codepen</a
+                  >
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <script>
+      function page() {
+        return {
+          url: "",
+          text: "",
+          colors: [
+            "slate",
+            "gray",
+            "zinc",
+            "neutral",
+            "stone",
+            "red",
+            "orange",
+            "amber",
+            "yellow",
+            "lime",
+            "green",
+            "emerald",
+            "teal",
+            "cyan",
+            "sky",
+            "blue",
+            "indigo",
+            "violet",
+            "purple",
+            "fuchsia",
+            "pink",
+            "rose",
+          ],
+          primaryColor: "blue",
+          primaryColorOpen: false,
+          platforms: [
+            {
+              id: "facebook",
+              name: "Facebook",
+              path: "M379 22v75h-44c-36 0-42 17-42 41v54h84l-12 85h-72v217h-88V277h-72v-85h72v-62c0-72 45-112 109-112 31 0 58 3 65 4z",
+              template: "https://facebook.com/sharer/sharer.php?u={url}",
+              selected: true,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "twitter",
+              name: "Twitter",
+              path: "m459 152 1 13c0 139-106 299-299 299-59 0-115-17-161-47a217 217 0 0 0 156-44c-47-1-85-31-98-72l19 1c10 0 19-1 28-3-48-10-84-52-84-103v-2c14 8 30 13 47 14A105 105 0 0 1 36 67c51 64 129 106 216 110-2-8-2-16-2-24a105 105 0 0 1 181-72c24-4 47-13 67-25-8 24-25 45-46 58 21-3 41-8 60-17-14 21-32 40-53 55z",
+              template:
+                "https://twitter.com/intent/tweet/?text={text}&amp;url={url}",
+              selected: true,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "linkedin",
+              name: "Linkedin",
+              path: "M136 183v283H42V183h94zm6-88c1 27-20 49-53 49-32 0-52-22-52-49 0-28 21-49 53-49s52 21 52 49zm333 208v163h-94V314c0-38-13-64-47-64-26 0-42 18-49 35-2 6-3 14-3 23v158h-94V183h94v41c12-20 34-48 85-48 62 0 108 41 108 127z",
+              template:
+                "https://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={text}&amp;summary={text}&amp;source={url}",
+              selected: true,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "tumblr",
+              name: "Tumblr",
+              path: "M406 480c-14 15-50 32-98 32-120 0-147-89-147-141V227h-47c-6 0-10-4-10-10v-68c0-7 4-13 11-16 62-21 82-76 85-117 0-11 6-16 16-16h71c5 0 10 4 10 10v115h83c5 0 10 5 10 10v82c0 5-5 10-10 10h-84v133c0 34 24 54 68 36 5-2 9-3 13-2 3 1 6 3 7 8l22 64c2 5 4 10 0 14z",
+              template:
+                "https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title={text}&amp;caption={text}&amp;content={url}&amp;canonicalUrl={url}&amp;shareSource=tumblr_share_button",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "pinterest",
+              name: "Pinterest",
+              path: "M268 6C165 6 64 75 64 186c0 70 40 110 64 110 9 0 15-28 15-35 0-10-24-30-24-68 0-81 62-138 141-138 68 0 118 39 118 110 0 53-21 153-90 153-25 0-46-18-46-44 0-38 26-74 26-113 0-67-94-55-94 25 0 17 2 36 10 51-14 60-42 148-42 209 0 19 3 38 4 57 4 3 2 3 7 1 51-69 49-82 72-173 12 24 44 36 69 36 106 0 154-103 154-196C448 71 362 6 268 6z",
+              template:
+                "https://pinterest.com/pin/create/button/?url={url}&amp;media={url}&amp;description={text}",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "reddit",
+              name: "Reddit",
+              path: "M440 204c-15 0-28 6-38 15-35-24-83-40-137-42l28-125 88 20c0 22 18 39 39 39 22 0 40-18 40-39s-17-40-40-40c-15 0-28 9-35 22l-97-22c-5-1-10 3-11 7l-31 138c-53 2-100 18-136 43a53 53 0 0 0-38-16c-56 0-74 74-23 100l-3 24c0 84 95 152 210 152 117 0 211-68 211-152 0-8-1-17-3-25 50-25 32-99-24-99zM129 309a40 40 0 1 1 80 0 40 40 0 0 1-80 0zm215 93c-37 37-139 37-176 0-4-3-4-9 0-13s10-4 13 0c28 28 120 29 149 0 4-4 10-4 14 0s4 10 0 13zm-1-54c-22 0-39-17-39-39a39 39 0 1 1 39 39z",
+              template:
+                "https://reddit.com/submit/?url={url}&amp;resubmit=true&amp;title={text}",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "xing",
+              name: "Xing",
+              path: "m227 210-70 123c-5 9-11 13-18 13H74c-8 0-12-8-9-14l69-122-44-76c-4-7 1-14 9-14h65c7 0 13 4 18 12l45 78zM447 46 303 299l91 167c4 7 0 14-8 14h-66c-7 0-13-4-18-12l-92-169L355 44c4-8 10-12 17-12h66c8 0 12 7 9 14z",
+              template:
+                "https://www.xing.com/app/user?op=share;url={url};title={text}",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "whatsapp",
+              name: "Whatsapp",
+              path: "M413 97A222 222 0 0 0 64 365L31 480l118-31a224 224 0 0 0 330-195c0-59-25-115-67-157zM256 439c-33 0-66-9-94-26l-7-4-70 18 19-68-4-7a185 185 0 0 1 287-229c34 36 56 82 55 131 1 102-84 185-186 185zm101-138c-5-3-33-17-38-18-5-2-9-3-12 2l-18 22c-3 4-6 4-12 2-32-17-54-30-75-66-6-10 5-10 16-31 2-4 1-7-1-10l-17-41c-4-10-9-9-12-9h-11c-4 0-9 1-15 7-5 5-19 19-19 46s20 54 23 57c2 4 39 60 94 84 36 15 49 17 67 14 11-2 33-14 37-27s5-24 4-26c-2-2-5-4-11-6z",
+              template: "https://wa.me/?text={text}%20{url}",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "hackernews",
+              name: "Hacker News",
+              path: "M32 32v448h448V32H32zm21 197zm218 54v101h-31V281l-80-153h37c53 98 50 101 60 126 12-27 5-25 60-126h35l-81 155z",
+              template:
+                "https://news.ycombinator.com/submitlink?u={url}&amp;t={text}",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "vk",
+              name: "VK",
+              path: "M63 63c-31 32-31 83-31 184v18c0 101 0 152 31 184s83 31 184 31h18c101 0 152 0 184-31s31-83 31-184v-18c0-101 0-152-31-184s-83-31-184-31h-18C146 32 95 32 63 63zm45 105h51c1 86 39 122 69 129V168h48v74c30-3 61-37 71-74h48a142 142 0 0 1-65 93 147 147 0 0 1 76 94h-53a92 92 0 0 0-77-67v67h-6c-102 0-160-70-162-187z",
+              template: "http://vk.com/share.php?title={text}&amp;url={url}",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "telegram",
+              name: "Telegram",
+              path: "M256 8a248 248 0 1 0 0 496 248 248 0 0 0 0-496zm115 169c-4 39-20 134-28 178-4 19-10 25-17 25-14 2-25-9-39-18l-56-37c-24-17-8-25 6-40 3-4 67-61 68-67l-1-4-5-1q-4 1-105 70-15 10-27 9c-9 0-26-5-38-9-16-5-28-7-27-16q1-7 18-14l145-62c69-29 83-34 92-34 2 0 7 1 10 3l4 7a43 43 0 0 1 0 10z",
+              template:
+                "https://telegram.me/share/url?text={text}&amp;url={url}",
+              selected: false,
+              extendedLabelPrefix: "Share on",
+            },
+            {
+              id: "email",
+              name: "Email",
+              path: "M464 64a48 48 0 0 1 29 86L275 314c-11 8-27 8-38 0L19 150a48 48 0 0 1 29-86h416zM218 339c22 17 54 17 76 0l218-163v208c0 35-29 64-64 64H64c-35 0-64-29-64-64V176l218 163z",
+              template: "mailto:?subject={text}&amp;body={url}",
+              selected: false,
+              extendedLabelPrefix: "Share by",
+            },
+          ],
+          sizes: [
+            {
+              id: "small",
+              name: "Small",
+              iconClasses: "w-4 h-4",
+            },
+            {
+              id: "medium",
+              name: "Medium",
+              iconClasses: "w-6 h-6",
+            },
+            {
+              id: "large",
+              name: "Large",
+              iconClasses: "w-8 h-8",
+            },
+          ],
+          selectedSize: {
+            id: "medium",
+            name: "Medium",
+            classes: "p-3 p-6",
+            iconClasses: "w-6 h-6",
+          },
+          labels: [
+            {
+              id: "off",
+              name: "Off",
+              sharingButtonClasses: {
+                small: "p-1",
+                medium: "p-3",
+                large: "p-5",
+              },
+              iconLabelClasses: {
+                small: "",
+                medium: "",
+                large: "",
+              },
+            },
+            {
+              id: "on",
+              name: "On",
+              sharingButtonClasses: {
+                small: "py-1 px-2 text-sm",
+                medium: "py-3 px-5",
+                large: "py-5 pl-5 pr-7 text-lg",
+              },
+              iconLabelClasses: {
+                small: "ml-1",
+                medium: "ml-2",
+                large: "ml-4",
+              },
+            },
+            {
+              id: "extended",
+              name: "Extended",
+              sharingButtonClasses: {
+                small: "py-1 px-2 text-sm",
+                medium: "py-3 px-5",
+                large: "py-5 pl-5 pr-7 text-lg",
+              },
+              iconLabelClasses: {
+                small: "ml-1",
+                medium: "ml-2",
+                large: "ml-4",
+              },
+            },
+          ],
+          selectedLabel: {
+            id: "off",
+            name: "Off",
+            sharingButtonClasses: {
+              small: "p-1",
+              medium: "p-3",
+              large: "p-5",
+            },
+            iconLabelClasses: {
+              small: "",
+              medium: "",
+              large: "",
+            },
+          },
+          borderRadius: [
+            {
+              id: "none",
+              name: "None",
+              classes: {
+                small: "",
+                medium: "",
+                large: "",
+              },
+            },
+            {
+              id: "rounded",
+              name: "Rounded",
+              classes: {
+                small: "rounded",
+                medium: "rounded-lg",
+                large: "rounded-lg",
+              },
+            },
+            {
+              id: "full",
+              name: "Full",
+              classes: {
+                small: "rounded-full",
+                medium: "rounded-full",
+                large: "rounded-full",
+              },
+            },
+          ],
+          selectedBorderRadius: {
+            id: "rounded",
+            name: "Rounded",
+            classes: {
+              small: "rounded",
+              medium: "rounded-lg",
+              large: "rounded-lg",
+            },
+          },
+          output: "",
+        };
+      }
+
+      function init($refs) {
+        Sortable.create($refs.items);
+      }
+
+      function copyToClipboard(subject) {
+        navigator.clipboard.writeText(subject);
+      }
+
+      function removeEl(el) {
+        if (el.parentNode !== null) {
+          el.parentNode.removeChild(el);
+        }
+      }
+
+      function each(parent, selector, cb) {
+        var elements = parent.querySelectorAll(selector);
+        Array.prototype.forEach.call(elements, function (el, i) {
+          cb(el);
+        });
+      }
+
+      function format(html) {
+        var tab = "  ";
+        var result = "";
+        var indent = "";
+
+        html.split(/>\s*</).forEach(function (element) {
+          if (element.match(/^\/\w/)) {
+            indent = indent.substring(tab.length);
+          }
+
+          result += indent + "<" + element + ">\r\n";
+
+          if (
+            element.match(/^<?\w[^>]*[^\/]$/) &&
+            !element.startsWith("input")
+          ) {
+            indent += tab;
+          }
+        });
+
+        return result.substring(1, result.length - 3);
+      }
+
+      function generateSharingButtons($refs) {
+        // console.log("url", $refs.url);
+        // console.log("text", $refs.text);
+
+        var cloned = $refs.items.cloneNode(true);
+
+        cloned.setAttribute("class", "sharing-buttons");
+        cloned.removeAttribute("x-ref");
+        cloned.querySelector("template").remove();
+
+        each(
+          cloned,
+          'template, [data-selected="false"], .hidden',
+          function (el) {
+            removeEl(el);
+          }
+        );
+
+        each(cloned, "*", function (el) {
+          var attrToRemove = [];
+          for (var a of el.attributes) {
+            if (
+              [":", "@"].indexOf(a.name[0]) !== -1 ||
+              a.name.substring(0, 2) === "x-" ||
+              a.name.substring(0, 5) === "data-"
+            ) {
+              attrToRemove.push(a.name);
+            }
+          }
+          if (attrToRemove.length > 0) {
+            attrToRemove.forEach(function (attrName) {
+              el.removeAttribute(attrName);
+            });
+          }
+        });
+
+        return format(cloned.outerHTML);
+      }
+
+      function copySharingButtons($refs) {
+        copyToClipboard(generateSharingButtons($refs));
+      }
+
+      function generateCodepenData($refs) {
+        return JSON.stringify({
+          title: "Tailwind CSS Sharing Buttons",
+          description: "Generated by tailwind-css-sharing-buttons.vercel.app",
+          html: generateSharingButtons($refs),
+          head: "<meta name='viewport' content='width=device-width'>",
+          js_external: "https://cdn.tailwindcss.com",
+          editors: "100",
+        });
+      }
+
+      function formatHref(template, url, text) {
+        return template
+          .replace(/\{url\}/g, encodeURIComponent(url))
+          .replace(/\{text\}/g, encodeURIComponent(text));
+      }
+
+      document.addEventListener("alpine:init", () => {
+        Alpine.magic("clipboard", () => {
+          return (subject) => copyToClipboard(subject);
+        });
+
+        Alpine.magic("copy", () => {
+          return ($refs) => copySharingButtons($refs);
+        });
+
+        Alpine.magic("codepen", () => {
+          return ($refs) => generateCodepenData($refs);
+        });
+
+        Alpine.magic("href", () => {
+          return (template, url, text) => formatHref(template, url, text);
+        });
+      });
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"></script>
+    <script src="//unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
   </body>
 </html>

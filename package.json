@@ -86,7 +86,7 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "build:css": "tailwindcss build src/style.css -o dist/style.css --watch"
+    "build:css": "tailwindcss build src/style.css -o dist/style.css --watch --minify"
   },
   "repository": {
     "type": "git",
