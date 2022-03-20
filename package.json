@@ -98,7 +98,8 @@
     "dev": "npm run watch && tailwindcss build src/style.css -o dist/style.css --watch --minify",
     "watch": "npm-watch",
     "build:css": "tailwindcss build src/style.css -o dist/style.css --minify",
-    "build:html": "html-minifier --input-dir ./src --output-dir ./dist --collapse-whitespace --minify-css true --minify-js true --file-ext html"
+    "build:html": "html-minifier --input-dir ./src --output-dir ./dist --collapse-whitespace --minify-css true --minify-js true --file-ext html",
+    "build": "npm run build:css && npm run build:html"
   },
   "repository": {
     "type": "git",
