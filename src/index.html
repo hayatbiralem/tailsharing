@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Section 1 -->
+    <section
+      class="w-full bg-white"
+      x-data="{
+  platforms: [
+  {
+  'id': 'facebook',
+  'name': 'Facebook',
+  'path': 'M379 22v75h-44c-36 0-42 17-42 41v54h84l-12 85h-72v217h-88V277h-72v-85h72v-62c0-72 45-112 109-112 31 0 58 3 65 4z',
+  'template': 'https://facebook.com',
+  'selected': true
+  },
+  {
+  'id': 'twitter',
+  'name': 'Twitter',
+  'path': 'M481 117c-12 18-28 34-46 47v12c0 122-93 263-262 263-53 0-101-15-142-42a191 191 0 0 0 137-38c-41-1-75-27-87-64l18 2c8 0 16-2 24-4-42-8-74-45-74-90v-1c12 7 27 11 42 11A92 92 0 0 1 62 90c46 56 114 93 191 97a92 92 0 0 1 157-84c21-5 41-12 59-23-7 21-22 39-41 51 19-2 37-7 53-14z',
+  'template': 'https://twitter.com',
+  'selected': true
+  },
+  {
+  'id': 'linkedin',
+  'name': 'Linkedin',
+  'path': 'M136 183v283H42V183h94zm6-88c1 27-20 49-53 49-32 0-52-22-52-49 0-28 21-49 53-49s52 21 52 49zm333 208v163h-94V314c0-38-13-64-47-64-26 0-42 18-49 35-2 6-3 14-3 23v158h-94V183h94v41c12-20 34-48 85-48 62 0 108 41 108 127z',
+  'template': 'https://twitter.com',
+  'selected': false
+  }
+  ]
+  }"
+    >
+      <div class="mx-auto">
+        <div class="flex flex-col lg:flex-row">
+          <div
+            class="
+              relative
+              w-full
+              lg:min-h-screen
+              bg-cover
+              lg:w-6/12
+              xl:w-7/12
+              bg-gradient-to-r
+              from-white
+              via-white
+              to-gray-100
+            "
+          >
+            <div
+              class="
+                relative
+                flex flex-col
+                items-center
+                justify-center
+                w-full
+                h-full
+                px-10
+                my-20
+                lg:px-16
+                lg:my-0
+              "
+            >
+              <div
+                class="
+                  flex flex-col
+                  items-start
+                  space-y-8
+                  tracking-tight
+                  lg:max-w-3xl
+                "
+              >
+                <div class="relative">
+                  <p class="mb-2 font-medium text-gray-700 uppercase">
+                    Tailwind CSS
+                  </p>
+                  <h2 class="text-5xl font-bold text-gray-900 xl:text-6xl">
+                    Sharing Buttons
+                  </h2>
+                </div>
+                <p class="text-2xl text-gray-700">
+                  We've created a simple tool to make your own sharing buttons
+                  based on Tailwind CSS without any JavaScript dependency, just
+                  plain HTML.
+                </p>
+                <a
+                  href="https://www.patreon.com/hayatbiralem"
+                  class="
+                    inline-block
+                    px-8
+                    py-5
+                    text-xl
+                    font-medium
+                    text-center text-white
+                    transition
+                    duration-200
+                    bg-blue-600
+                    rounded-lg
+                    hover:bg-blue-700
+                    ease
+                  "
+                  >Donate</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:min-h-screen bg-white lg:w-6/12 xl:w-5/12">
+            <div
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                w-full
+                h-full
+                p-10
+                lg:p-16
+                xl:p-24
+              "
+            >
+              <div class="relative w-full space-y-8">
+                <div class="relative">
+                  <label class="font-medium text-gray-900">URL</label>
+                  <input
+                    type="text"
+                    class="
+                      block
+                      w-full
+                      px-4
+                      py-4
+                      mt-2
+                      text-xl
+                      placeholder-gray-400
+                      bg-gray-200
+                      rounded-lg
+                      focus:outline-none
+                      focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50
+                    "
+                    placeholder="Enter your URL"
+                  />
+                </div>
+                <div class="relative">
+                  <label class="font-medium text-gray-900">Text</label>
+                  <textarea
+                    class="
+                      block
+                      w-full
+                      px-4
+                      py-4
+                      mt-2
+                      text-xl
+                      placeholder-gray-400
+                      bg-gray-200
+                      rounded-lg
+                      focus:outline-none
+                      focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50
+                    "
+                    placeholder="Enter your text"
+                  ></textarea>
+                </div>
+                <div class="relative">
+                  <label class="font-medium text-gray-900"
+                    >Social networks</label
+                  >
+                  <div class="mt-2">
+                    <!-- Active Button Boilerplate -->
+                    <!-- 
+<button class="inline-block p-4 transition duration-200 rounded-lg ease text-white bg-blue-600 hover:bg-blue-700">
+<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+</button>
+-->
+                    <template x-for="platform in platforms">
+                      <button
+                        class="
+                          inline-block
+                          p-4
+                          transition
+                          duration-200
+                          rounded-lg
+                          border-2
+                          ease
+                          mr-1
+                        "
+                        x-on:click="platform.selected = ! platform.selected"
+                        :class="platform.selected ? 'text-white border-blue-600 bg-blue-600 hover:bg-blue-700 hover:border-blue-700' : 'text-slate-600 border-slate-600 hover:border-blue-700 hover:text-blue-700'"
+                      >
+                        <svg
+                          class="w-6 h-6"
+                          aria-hidden="true"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <title x-text="platform.name" />
+                          <path x-bind:d="platform.path" />
+                        </svg>
+                      </button>
+                    </template>
+                  </div>
+                </div>
+                <div class="relative grid grid-cols-2 gap-3">
+                  <a
+                    href="#_"
+                    class="
+                      inline-block
+                      w-full
+                      px-5
+                      py-4
+                      text-lg
+                      font-medium
+                      text-center text-white
+                      transition
+                      duration-200
+                      bg-blue-600
+                      rounded-lg
+                      hover:bg-blue-700
+                      ease
+                    "
+                    >Copy</a
+                  >
+                  <a
+                    href="#_"
+                    class="
+                      inline-block
+                      w-full
+                      px-5
+                      py-4
+                      text-lg
+                      font-bold
+                      text-center text-gray-900
+                      transition
+                      duration-200
+                      bg-white
+                      border border-gray-300
+                      rounded-lg
+                      hover:bg-gray-100
+                      ease
+                    "
+                    >Show</a
+                  >
+                </div>
+                <div>
+                  <p>
+                    Created by
+                    <a
+                      class="text-blue-600 hover:text-blue-700 hover:underline"
+                      href="https://twitter.com/hayatbiralem"
+                      >Ömür Yanıkoğlu @hayatbiralem</a
+                    >
+                  </p>
+                  <p class="text-sm border-t border-gray-200 pt-5 mt-5">
+                    Attributions:
+                    <a
+                      class="text-blue-600 hover:text-blue-700 hover:underline"
+                      href="https://sharingbuttons.io/"
+                      >Sharingbuttons.io</a
+                    >
+                    <a
+                      class="text-blue-600 hover:text-blue-700 hover:underline"
+                      href="https://tailwindcss.com/"
+                    >
+                      Tailwind CSS</a
+                    >,
+                    <a
+                      class="text-blue-600 hover:text-blue-700 hover:underline"
+                      href="https://devdojo.com/tails"
+                      >DevDojo Tails</a
+                    >,
+                    <a
+                      class="text-blue-600 hover:text-blue-700 hover:underline"
+                      href="https://alpinejs.dev/"
+                      >Alphine.js</a
+                    >,
+                    <a
+                      class="text-blue-600 hover:text-blue-700 hover:underline"
+                      href="https://icomoon.io/"
+                      >IcoMoon</a
+                    >,
+                    <a
+                      class="text-blue-600 hover:text-blue-700 hover:underline"
+                      href="https://jakearchibald.github.io/svgomg/"
+                      >SVGOM</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </body>
+</html>
