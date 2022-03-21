@@ -1,4 +1,4 @@
-5712
+5714
 116C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\watcher\src\Signal.hh132922924668328878 0
 104C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\picomatch\LICENSE132922569956957331 0
 124C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\svg-css.js132922569982489597 0
@@ -17,7 +17,7 @@
 135C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\source-map-support\browser-source-map-support.js132922924658167044 0
 114C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\source-map\lib\array-set.js132922924661292057 0
 84C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\.gitignore132922598582808750 0
-78C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist132922982308994949 1
+78C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist132922993399679977 1
 149C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md132922924674578873 0
 100C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\xtend\test.js132922569961453492 0
 132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-selector-parser\dist\sortAscending.js132922569964986293 0
@@ -60,7 +60,7 @@
 128C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-selector-parser\dist\processor.js132922569964517521 0
 134C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\css-marker-pseudo.js132922569970142532 0
 127C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@swc\helpers\lib\_to_consumable_array.js132922924675203917 0
-77C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src132922982010470944 1
+77C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src132922993112392137 1
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\fast-glob\out\providers\filters132922569965611289 1
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\RU.js132922569981239616 0
 87C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src\index.css132922943862880002 0
@@ -78,7 +78,7 @@
 101C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\index.2cdaf7bc.css.map132922941062529301 0
 106C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\packager-js132922924666917046 1
 96C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lilconfig132922569959578464 1
-88C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src\index.html132922981624596179 0
+88C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src\index.html132922993207746923 0
 102C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\.bin\cssesc.ps1132922569985616041 0
 94C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\nan\doc132922924671610133 1
 124C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\node_path\y\ccc\index.js132922569966236297 0
@@ -86,8 +86,8 @@
 106C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\base-x\src\index.js132922924657682156 0
 109C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\picomatch\lib\utils.js132922569961609744 0
 117C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\svgo\plugins\removeUnusedNS.js132922924675724705 0
-111C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\CHANGELOG.md132922569970142532 0
 124C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\node_path\x\ccc\index.js132922569966080043 0
+111C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\CHANGELOG.md132922569970142532 0
 119C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb\libraries132922924659729543 1
 121C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\htmlnano\lib\modules\minifyJson.js132922924666448299 0
 113C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\workers\lib\bus.js132922924660510799 0
@@ -117,21 +117,17 @@
 108C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\mdn-data\api\index.js132922924658635824 0
 104C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\terser\lib\ast.js132922924662854560 0
 86C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src\index.js132922973409221228 0
-98C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-api132922924660354554 1
-117C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\fast-glob\out\utils\errno.d.ts132922569965611289 0
-125C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\css-tree\lib\syntax\node\Combinator.js132922924665979554 0
-129C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\lib\processTailwindFeatures.js132922569969361344 0
-118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\MS.js132922569978583349 0
-139C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\package-manager\test\fixtures\packages\peers132922924672391360 1
-134C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\prebuilds\linux-arm64\node.abi88.musl.node132922924688637979 0
-124C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\terser\node_modules\commander\typings132922924661917055 1
-91C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\svgo132922924681284951 1
-130C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\lib\util\parseAnimationValue.js132922569968736292 0
-102C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\posthtml-parser132922924662229557 1
-127C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-normalize-repeat-style\types\lib132922924662385836 1
-130C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\text-overflow.js132922569983041591 0
-118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\BJ.js132922569967173857 0
-92C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src\screenshot.png132922982011530991 0
+103C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\csso\lib\replace132922924672860111 1
+109C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\cssnano-preset-default132922924660979569 1
+136C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\reporter-dev-server\src\ServerReporter.js132922924667073302 0
+122C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\terser\node_modules\source-map\dist132922924662385836 1
+107C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\core\LICENSE132922924665198289 0
+94C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\cssnano132922924660667062 1
+122C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\utility-types\dist\utility-types.js132922924661760802 0
+102C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src\screenshot-1920x1080.png132922993113422137 0
+118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\htmlnano\lib\presets\ampSafe.js132922924658948298 0
+132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-raw\lib\RawTransformer.js132922924658792046 0
+100C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\src\screenshot-960x960.png132922993074289840 0
 105C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\.package-lock.json132922924698466171 0
 140C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\core\test\fixtures\config-malformed\.parcelrc132922924660042046 0
 133C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-merge-longhand\src\lib\insertCloned.js132922924665667119 0
@@ -196,13 +192,6 @@
 97C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\acorn-node132922569964361299 1
 114C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\lib\util\tap.js132922569969830043 0
 114C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\precedence\bbb132922569967017540 1
-103C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\terser\lib\utils132922924669891449 1
-113C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\precedence.js132922569967330033 0
-118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\resolver\multirepo132922569967955090 1
-96C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\detective132922569963163803 1
-132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\packager-js\src\GlobalOutputFormat.js132922924663948293 0
-113C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-minify-font-values132922924663010802 1
-118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\CO.js132922569968267566 0
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\posthtml-render\dist\index.d.ts132922924661917055 0
 143C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\runtime-js\lib\helpers\browser\preload-loader.js132922924669578880 0
 123C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-selector-parser\package.json132922569965455043 0
@@ -262,6 +251,9 @@
 134C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\core\test\fixtures\config-node-pipeline132922924661604592 1
 123C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-minify-gradients\LICENSE-MIT132922924657219996 0
 100C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\camelcase-css132922569960672220 1
+98C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-api132922924660354554 1
+117C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\fast-glob\out\utils\errno.d.ts132922569965611289 0
+125C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\css-tree\lib\syntax\node\Combinator.js132922924665979554 0
 99C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite132922569985302272 1
 112C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\util-deprecate\History.md132922569961297238 0
 128C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\canvas-text.js132922569967798800 0
@@ -330,12 +322,6 @@
 95C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\css-what132922924663010802 1
 126C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-convert-values\types\index.d.ts132922924663010802 0
 93C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\cssesc132922569961297238 1
-103C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\csso\lib\replace132922924672860111 1
-109C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\cssnano-preset-default132922924660979569 1
-136C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\reporter-dev-server\src\ServerReporter.js132922924667073302 0
-122C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\terser\node_modules\source-map\dist132922924662385836 1
-107C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\core\LICENSE132922924665198289 0
-94C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\cssnano132922924660667062 1
 117C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\watcher\src\DirTree.cc132922924662073294 0
 124C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\resolver\nested_symlinks132922569963736301 1
 123C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\autoprefixer\lib\hacks\flex-basis.js132922569964986293 0
@@ -348,6 +334,13 @@
 123C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\htmlparser2\lib\FeedHandler.d.ts.map132922924663010802 0
 98C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\detect-libc132922924661604592 1
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\FM.js132922569973895856 0
+103C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\terser\lib\utils132922924669891449 1
+113C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\precedence.js132922569967330033 0
+118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\resolver\multirepo132922569967955090 1
+96C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\detective132922569963163803 1
+132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\packager-js\src\GlobalOutputFormat.js132922924663948293 0
+113C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-minify-font-values132922924663010802 1
+118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\CO.js132922569968267566 0
 115C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\workers\lib\types.js132922924670360119 0
 98C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss132922569970142532 1
 143C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest.c132922924678159957 0
@@ -739,6 +732,14 @@
 122C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-ordered-values\src\index.js132922924663948293 0
 106C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\safe-buffer\LICENSE132922924657376246 0
 95C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\posthtml132922924661448304 1
+129C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\lib\processTailwindFeatures.js132922569969361344 0
+118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\MS.js132922569978583349 0
+139C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\package-manager\test\fixtures\packages\peers132922924672391360 1
+134C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\prebuilds\linux-arm64\node.abi88.musl.node132922924688637979 0
+124C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\terser\node_modules\commander\typings132922924661917055 1
+91C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\svgo132922924681284951 1
+130C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\lib\util\parseAnimationValue.js132922569968736292 0
+102C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\posthtml-parser132922924662229557 1
 144C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\msgpackr-extract\prebuilds\linux-x64\node.abi93.musl.node132922924682691231 0
 102C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\posthtml-render132922924661135797 1
 102C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\queue-microtask132922569960359765 1
@@ -1198,7 +1199,6 @@
 128C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\sql-storage.js132922569982177112 0
 132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\runtime-js\lib\helpers\cacheLoader.js132922924662542051 0
 112C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\resolve\test\mock_sync.js132922569967017540 0
-122C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\utility-types\dist\utility-types.js132922924661760802 0
 125C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-babel\package.json132922924666917046 0
 109C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\util-deprecate\LICENSE132922569959734732 0
 130C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\notifications.js132922569979208364 0
@@ -1222,8 +1222,6 @@
 121C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\type-fest\ts41\delimiter-case.d.ts132922924664260803 0
 136C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-ordered-values\types\rules\boxShadow.d.ts132922924667229552 0
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\type-fest\ts41\pascal-case.d.ts132922924668172630 0
-146C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_copy.c132922924669891449 0
-129C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\style-scoped.js132922569982333350 0
 108C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\camelcase-css\license132922569960203462 0
 132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\tailwindcss\src\util\isValidArbitraryValue.js132922569968423837 0
 138C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.1132922924667385883 0
@@ -2578,6 +2576,9 @@
 123C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-normalize-repeat-style\types132922924662229557 1
 131C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-merge-longhand\src\lib\colornames.js132922924662698282 0
 134C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-normalize-repeat-style\types\index.d.ts132922924661917055 0
+127C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-normalize-repeat-style\types\lib132922924662385836 1
+130C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\text-overflow.js132922569983041591 0
+118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\BJ.js132922569967173857 0
 116C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\nanoid\async\index.browser.js132922569962390963 0
 134C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\midl.h132922924682534979 0
 136C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\postcss-normalize-repeat-style\types\lib\map.d.ts132922924662542051 0
@@ -3237,6 +3238,8 @@
 144C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest3.c132922924679097457 0
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\regions\CX.js132922569972017562 0
 144C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\Makefile132922924665198289 0
+146C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_copy.c132922924669891449 0
+129C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\style-scoped.js132922569982333350 0
 101C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\logger132922924661292057 1
 146C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_drop.1132922924666760799 0
 146C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_drop.c132922924670203892 0
@@ -3454,7 +3457,6 @@
 149C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\dom-serializer\node_modules\entities\lib\decode_codepoint.d.ts132922924665667119 0
 132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\detective\test\files\set-in-object-pattern.js132922569964830033 0
 107C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\htmlnano\lib\presets132922924668641370 1
-118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\htmlnano\lib\presets\ampSafe.js132922924658948298 0
 103C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\core\src132922924684253706 1
 110C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\packager-js\lib132922924666292069 1
 115C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\htmlnano\lib\presets\safe.js132922924668641370 0
@@ -3920,7 +3922,7 @@
 130C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\caniuse-lite\data\features\readonly-attr.js132922569980927088 0
 120C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\reporter-cli\package.json132922924665042101 0
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\css-what\lib\stringify.d.ts.map132922924662698282 0
-89C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\index.html132922982308653347 0
+89C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\index.html132922993413696341 0
 96C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\index.21469105.js132922982308653347 0
 122C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@swc\helpers\src\_async_iterator.js132922924679878697 0
 112C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\css-what\lib\stringify.js132922924660354554 0
@@ -5064,7 +5066,6 @@
 114C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-raw\lib132922924658635824 1
 118C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-raw\LICENSE132922924657376246 0
 114C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-raw\src132922924659573302 1
-132C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-raw\lib\RawTransformer.js132922924658792046 0
 119C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-posthtml\lib132922924660354554 1
 123C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-posthtml\LICENSE132922924657376246 0
 134C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\node_modules\@parcel\transformer-posthtml\src\loadPlugins.js132922924659729543 0
@@ -5709,5 +5710,6 @@
 97C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\index.623c0219.css132922929048924764 0
 97C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\index.e7c629ff.css132922982308663360 0
 101C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\index.e7c629ff.css.map132922982308713329 0
+101C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\screenshot-960x960.png132922993399649976 0
 93C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\dist\screenshot.png132922982300032993 0
 93C:\Users\hayat\Downloads\Projeler\brain.work\tailwind-css-sharing-buttons\.github\FUNDING.yml132922881553334684 0
