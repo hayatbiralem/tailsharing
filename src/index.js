@@ -301,7 +301,7 @@ function generateSharingButtons($refs) {
 
   var cloned = $refs.items.cloneNode(true);
 
-  cloned.setAttribute("class", "sharing-buttons");
+  cloned.setAttribute("class", "sharing-buttons flex flex-wrap");
   cloned.removeAttribute("x-ref");
   cloned.querySelector("template").remove();
 
