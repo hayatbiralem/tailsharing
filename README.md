@@ -37,3 +37,7 @@ We would like to **thank** those who contributed to the release of this product.
 - [Parcel](https://parceljs.org/)
 - [michal.jakubeczy](https://stackoverflow.com/a/60338028/1227926)
 - [Codepen](https://blog.codepen.io/documentation/prefill/)
+
+## Todo
+
+- [ ] Remember the user's color selection by Javascript cookies.
