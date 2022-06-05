@@ -2,15 +2,23 @@
 
 ## Tailwind CSS Sharing Buttons
 
-![brain.work logo](src/brain.work-logo.svg)
+[![brain.work logo](src/brain.work-logo.svg)](https://brain.work)
 
 We've created a simple tool to make your own sharing buttons based on Tailwind CSS **without any JavaScript dependency**, just plain HTML.
 
 Created by [Ömür Yanıkoğlu @hayatbiralem](https://twitter.com/hayatbiralem) at [brain.work](https://brain.work/).
 
-If you like it, consider [donating](https://www.patreon.com/hayatbiralem). You can [open an issue](https://github.com/hayatbiralem/tailsharing/issues) on the [Github repo](https://github.com/hayatbiralem/tailsharing) to give feedback.
+## Support
 
-Attributions:
+If you like it, consider [donating](https://www.patreon.com/hayatbiralem).
+
+## Maintenance
+
+You can [open an issue](https://github.com/hayatbiralem/tailsharing/issues) on the [Github repo](https://github.com/hayatbiralem/tailsharing) to give feedback.
+
+## Attributions
+
+We would like to **thank** those who contributed to the release of this product.
 
 - [Yucel Faruk Sahan](https://twitter.com/yucelfaruksahan)
 - [Sharingbuttons.io](https://sharingbuttons.io/)
