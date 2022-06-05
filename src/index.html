@@ -98,7 +98,10 @@
                     Tailwind CSS Sharing Buttons
                   </h1>
                   <h2 class="mb-4 text-5xl font-bold text-gray-900 xl:text-6xl">
-                    <span>Tail</span><span :class="'text-' + primaryColor + '-600'">Sharing</span>
+                    <span>Tail</span
+                    ><span :class="'text-' + primaryColor + '-600'"
+                      >Sharing</span
+                    >
                   </h2>
                   <h3 class="flex items-center space-x-2">
                     <span class="inline-flex text-lg font-bold">by</span>
@@ -112,7 +115,8 @@
                   </h3>
                 </div>
                 <p class="text-2xl text-gray-700">
-                  We've created a simple tool for you to make your own sharing buttons based on Tailwind CSS
+                  We've created a simple tool for you to make your own sharing
+                  buttons based on Tailwind CSS
                   <strong
                     class="font-bold"
                     :class="'text-' + primaryColor + '-600'"
@@ -515,22 +519,37 @@
                 </div>
               </div>
               <div class="w-full mt-auto pt-8">
-                <p>
-                  Created by
+                <p class="flex flex-wrap items-center">
+                  <span>Created by</span>
+                  &nbsp;
                   <a
-                    class="hover:underline"
+                    class="
+                      inline-flex
+                      flex-wrap
+                      items-center
+                      space-x-2
+                      hover:underline
+                    "
                     :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
-                    href="https://twitter.com/hayatbiralem"
-                    >Ömür Yanıkoğlu @hayatbiralem</a
+                    href="https://twitter.com/hayatbiralem" target="_blank"
                   >
-                  at
-                  <a
-                    href="https://brain.work/"
-                    target="_blank"
-                    class="hover:underline"
-                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
-                    >brain.work</a
-                  >.
+                    <img
+                      class="shrink-0 rounded-full w-8 h-8 border border-neutral-200"
+                      src="./hayatbiralem.jpeg"
+                      alt="Ömür Yanıkoğlu profile image"
+                    />
+                    <span>Ömür Yanıkoğlu</span>
+                  </a> &nbsp;
+                  <span>
+                    at
+                    <a
+                      href="https://brain.work/"
+                      target="_blank"
+                      class="hover:underline"
+                      :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                      >brain.work</a
+                    >.</span
+                  >
                 </p>
                 <p class="text-sm mt-5">
                   If you like it, consider
