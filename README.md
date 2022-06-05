@@ -6,7 +6,7 @@
 
 We've created a simple tool for you to make your own sharing buttons based on Tailwind CSS **without any JavaScript dependencies**, just plain HTML.
 
-Created by [Ömür Yanıkoğlu @hayatbiralem](https://twitter.com/hayatbiralem) at [brain.work](https://brain.work/).
+Created by [Ömür Yanıkoğlu](https://twitter.com/hayatbiralem) at [brain.work](https://brain.work/).
 
 ## Maintenance
 
