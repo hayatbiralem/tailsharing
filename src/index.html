@@ -4,19 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tailwind CSS Sharing Buttons</title>
-    <meta name="description" content="This tool helps you generate Twitter card and OpenGraph meta tags.  These headers are invisible, but make sure your page looks as you'd like it to on Twitter, Facebook and other social media.">
-    
-    <meta property="og:title" content="Tailwind CSS Sharing Buttons">
-    <meta property="og:url" content="https://tailwind-css-sharing-buttons.vercel.app/">
-    <meta property="og:image" content="./screenshot-1024x1024.png">
-    <meta property="og:description" content="This tool helps you generate Twitter card and OpenGraph meta tags.  These headers are invisible, but make sure your page looks as you'd like it to on Twitter, Facebook and other social media.">
-    <meta property="og:type" content="website">
-    
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:title" content="Tailwind CSS Sharing Buttons">
-    <meta name="twitter:image" content="./screenshot-1024x1024.png">
-    <meta property="twitter:description" content="This tool helps you generate Twitter card and OpenGraph meta tags.  These headers are invisible, but make sure your page looks as you'd like it to on Twitter, Facebook and other social media.">
+    <title>TailSharing - Tailwind CSS Sharing Buttons</title>
+    <meta
+      name="description"
+      content="This tool helps you generate Twitter card and OpenGraph meta tags.  These headers are invisible, but make sure your page looks as you'd like it to on Twitter, Facebook and other social media."
+    />
+
+    <meta
+      property="og:title"
+      content="TailSharing - Tailwind CSS Sharing Buttons"
+    />
+    <meta property="og:url" content="https://tailsharing.com/" />
+    <meta property="og:image" content="./screenshot-1024x1024.png" />
+    <meta
+      property="og:description"
+      content="This tool helps you generate Twitter card and OpenGraph meta tags.  These headers are invisible, but make sure your page looks as you'd like it to on Twitter, Facebook and other social media."
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta
+      property="twitter:title"
+      content="TailSharing - Tailwind CSS Sharing Buttons"
+    />
+    <meta name="twitter:image" content="./screenshot-1024x1024.png" />
+    <meta
+      property="twitter:description"
+      content="This tool helps you generate Twitter card and OpenGraph meta tags.  These headers are invisible, but make sure your page looks as you'd like it to on Twitter, Facebook and other social media."
+    />
 
     <link rel="shortcut icon" href="favicon.ico" />
     <link href="./index.css" rel="stylesheet" />
@@ -76,20 +91,34 @@
                 "
               >
                 <div class="relative">
-                  <p
+                  <h1
                     class="mb-2 font-medium"
                     :class="'text-' + primaryColor + '-600'"
                   >
-                    Tailwind CSS
-                  </p>
-                  <h2 class="text-5xl font-bold text-gray-900 xl:text-6xl">
-                    Sharing Buttons
+                    Tailwind CSS Sharing Buttons
+                  </h1>
+                  <h2 class="mb-4 text-5xl font-bold text-gray-900 xl:text-6xl">
+                    <span>Tail</span><span :class="'text-' + primaryColor + '-600'">Sharing</span>
                   </h2>
+                  <h3 class="flex items-center space-x-2">
+                    <span class="inline-flex text-lg font-bold">by</span>
+                    <a
+                      class="inline-flex hover:opacity-80"
+                      href="https://brain.work/"
+                      target="_blank"
+                    >
+                      <img src="./brain.work-logo.svg" alt="brain.work logo" />
+                    </a>
+                  </h3>
                 </div>
                 <p class="text-2xl text-gray-700">
-                  I've created a simple tool to make your own sharing buttons
-                  based on Tailwind CSS without any JavaScript dependency, just
-                  plain HTML.
+                  We've created a simple tool to make your own sharing buttons
+                  based on Tailwind CSS
+                  <strong
+                    class="font-bold"
+                    :class="'text-' + primaryColor + '-600'"
+                    >without any JavaScript dependency</strong
+                  >, just plain HTML.
                 </p>
                 <a
                   href="https://www.patreon.com/hayatbiralem"
@@ -173,9 +202,7 @@
                 </div>
                 <div class="flex flex-col lg:flex-row gap-8">
                   <div class="relative">
-                    <label class="font-medium text-gray-900"
-                      >Color</label
-                    >
+                    <label class="font-medium text-gray-900">Color</label>
                     <div class="mt-2">
                       <!-- This example requires Tailwind CSS v2.0+ -->
                       <div>
@@ -362,9 +389,7 @@
                     </div>
                   </div>
                   <div class="relative">
-                    <label class="font-medium text-gray-900"
-                      >Radius</label
-                    >
+                    <label class="font-medium text-gray-900">Radius</label>
                     <div class="mt-2">
                       <template x-for="radius in borderRadius" :key="radius.id">
                         <button
@@ -498,6 +523,14 @@
                     :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
                     href="https://twitter.com/hayatbiralem"
                     >Ömür Yanıkoğlu @hayatbiralem</a
+                  >
+                  at
+                  <a
+                    href="https://brain.work/"
+                    target="_blank"
+                    class="hover:underline"
+                    :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
+                    >brain.work</a
                   >.
                 </p>
                 <p class="text-sm mt-5">
@@ -511,14 +544,14 @@
                   <a
                     class="hover:underline"
                     :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
-                    href="https://github.com/hayatbiralem/tailwind-css-sharing-buttons/issues"
+                    href="https://github.com/hayatbiralem/tailsharing/issues"
                     >open an issue</a
                   >
                   on the
                   <a
                     class="hover:underline"
                     :class="'text-' + primaryColor + '-600 hover:text-' + primaryColor + '-700'"
-                    href="https://github.com/hayatbiralem/tailwind-css-sharing-buttons"
+                    href="https://github.com/hayatbiralem/tailsharing"
                     >Github repo</a
                   >
                   to give feedback.
