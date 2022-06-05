@@ -40,4 +40,4 @@ We would like to **thank** those who contributed to the release of this product.
 
 ## Todo
 
-- [ ] Remember the user's color selection by JavaCcript cookies.
+- [ ] Remember the user's color selection by JavaScript cookies.
