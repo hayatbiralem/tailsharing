@@ -4,7 +4,7 @@
 
 [![brain.work logo](src/brain.work-logo.svg)](https://brain.work)
 
-We've created a simple tool to make your own sharing buttons based on Tailwind CSS **without any JavaScript dependency**, just plain HTML.
+We've created a simple tool for you to make your own sharing buttons based on Tailwind CSS **without any JavaScript dependencies**, just plain HTML.
 
 Created by [Ömür Yanıkoğlu @hayatbiralem](https://twitter.com/hayatbiralem) at [brain.work](https://brain.work/).
 
