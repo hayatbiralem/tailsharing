@@ -14,7 +14,7 @@ If you like it, consider [donating](https://www.patreon.com/hayatbiralem).
 
 ## Maintenance
 
-You can [open an issue](https://github.com/hayatbiralem/tailsharing/issues) on the [Github repo](https://github.com/hayatbiralem/tailsharing) to give feedback.
+You can [open an issue](https://github.com/hayatbiralem/tailsharing/issues) to give feedback.
 
 ## Attributions
 
