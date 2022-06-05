@@ -8,17 +8,13 @@ We've created a simple tool for you to make your own sharing buttons based on Ta
 
 Created by [Ömür Yanıkoğlu @hayatbiralem](https://twitter.com/hayatbiralem) at [brain.work](https://brain.work/).
 
-## Support
-
-If you like it, consider [donating](https://www.patreon.com/hayatbiralem).
-
 ## Maintenance
 
 You can [open an issue](https://github.com/hayatbiralem/tailsharing/issues) to give feedback.
 
-## Contact
+## Support
 
-If you have product ideas that you think will be useful, you can share them with us at [admin@brain.work](mailto:admin@brain.work). We will be happy if we can contribute.
+If you like it, consider [donating](https://www.patreon.com/hayatbiralem).
 
 ## Attributions
 
@@ -37,3 +33,7 @@ We would like to **thank** those who contributed to the release of this product.
 - [Parcel](https://parceljs.org/)
 - [michal.jakubeczy](https://stackoverflow.com/a/60338028/1227926)
 - [Codepen](https://blog.codepen.io/documentation/prefill/)
+
+## Contact
+
+If you have product ideas that you think will be useful, you can share them with us at [admin@brain.work](mailto:admin@brain.work). We will be happy if we can contribute.
