@@ -16,6 +16,10 @@ If you like it, consider [donating](https://www.patreon.com/hayatbiralem).
 
 You can [open an issue](https://github.com/hayatbiralem/tailsharing/issues) to give feedback.
 
+## Contact
+
+If you have product ideas that you think will be useful, you can share them with us at [admin@brain.work](mailto:admin@brain.work). We will be happy if we can contribute.
+
 ## Attributions
 
 We would like to **thank** those who contributed to the release of this product.
