@@ -1,15 +1,15 @@
-7539
+7541
 54/home/omur/code/tailwind-css-sharing-buttons/yarn.lock1654461613370000000 0
 64/home/omur/code/tailwind-css-sharing-buttons/.github/FUNDING.yml1654457240070000000 0
-67/home/omur/code/tailwind-css-sharing-buttons/dist/index.579125c3.js1654461683850000000 0
-70/home/omur/code/tailwind-css-sharing-buttons/dist/sitemap.6a27dc85.xml1654461219710000000 0
-72/home/omur/code/tailwind-css-sharing-buttons/dist/index.61d3354a.css.map1654461683900000000 0
-49/home/omur/code/tailwind-css-sharing-buttons/dist1654461683940000000 1
+67/home/omur/code/tailwind-css-sharing-buttons/dist/index.579125c3.js1654461727390000000 0
+72/home/omur/code/tailwind-css-sharing-buttons/dist/index.61d3354a.css.map1654465455210000000 0
+49/home/omur/code/tailwind-css-sharing-buttons/dist1654465455220000000 1
 63/home/omur/code/tailwind-css-sharing-buttons/tailwind.config.js1654457240140000000 0
 57/home/omur/code/tailwind-css-sharing-buttons/package.json1654461722280000000 0
 60/home/omur/code/tailwind-css-sharing-buttons/src/sitemap.xml1654461017690000000 0
 77/home/omur/code/tailwind-css-sharing-buttons/src/additional-class-helper.html1654457240140000000 0
 73/home/omur/code/tailwind-css-sharing-buttons/src/screenshot-1920x1920.png1654457240140000000 0
+66/home/omur/code/tailwind-css-sharing-buttons/src/hayatbiralem.jpeg1654463174373043800 0
 79/home/omur/code/tailwind-css-sharing-buttons/node_modules/resolve-from/index.js1654457448828000000 0
 86/home/omur/code/tailwind-css-sharing-buttons/node_modules/nth-check/lib/index.d.ts.map1654457446010999000 0
 82/home/omur/code/tailwind-css-sharing-buttons/node_modules/nth-check/lib/compile.js1654457446010999000 0
@@ -152,7 +152,7 @@
 71/home/omur/code/tailwind-css-sharing-buttons/node_modules/nan/nan_new.h1654457446403000000 0
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/regions/BY.js1654457435915999000 0
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/regions/HK.js1654457435915999000 0
-61/home/omur/code/tailwind-css-sharing-buttons/dist/sitemap.xml1654461683900000000 0
+61/home/omur/code/tailwind-css-sharing-buttons/dist/sitemap.xml1654461727390000000 0
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/regions/CN.js1654457435915999000 0
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/regions/KP.js1654457435915999000 0
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/regions/KW.js1654457435915999000 0
@@ -222,7 +222,7 @@
 99/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/features/wbr-element.js1654457435915999000 0
 102/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/features/css-exclusions.js1654457435915999000 0
 92/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/features/cors.js1654457435915999000 0
-59/home/omur/code/tailwind-css-sharing-buttons/src/index.html1654461451440000000 0
+59/home/omur/code/tailwind-css-sharing-buttons/src/index.html1654465455110000000 0
 103/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/features/getrandomvalues.js1654457435915999000 0
 99/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/features/font-smooth.js1654457435915999000 0
 99/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/features/flexbox-gap.js1654457435915999000 0
@@ -678,6 +678,7 @@
 98/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/public/resolve-config.js1654457450473999000 0
 90/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/public/colors.js1654457450473999000 0
 80/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/public1654457456110000000 1
+82/home/omur/code/tailwind-css-sharing-buttons/src/hayatbiralem.jpeg:Zone.Identifier1654463189530000000 0
 80/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/cli.js1654457450473999000 0
 93/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/util/pluginUtils.js1654457450473999000 0
 101/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/util/parseBoxShadowValue.js1654457450473999000 0
@@ -1131,7 +1132,7 @@
 92/home/omur/code/tailwind-css-sharing-buttons/node_modules/postcss-load-config/src/plugins.js1654457451108000000 0
 81/home/omur/code/tailwind-css-sharing-buttons/node_modules/postcss-load-config/src1654457455570000000 1
 77/home/omur/code/tailwind-css-sharing-buttons/node_modules/postcss-load-config1654457455140000000 1
-48/home/omur/code/tailwind-css-sharing-buttons/src1654460990550000000 1
+48/home/omur/code/tailwind-css-sharing-buttons/src1654463189530000000 1
 77/home/omur/code/tailwind-css-sharing-buttons/node_modules/micromatch/index.js1654457451859999000 0
 78/home/omur/code/tailwind-css-sharing-buttons/node_modules/micromatch/README.md1654457451859999000 0
 81/home/omur/code/tailwind-css-sharing-buttons/node_modules/micromatch/package.json1654457451859999000 0
@@ -1671,7 +1672,7 @@
 101/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/transformer-js/src/JSTransformer.js1654457439438999000 0
 111/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/transformer-js/parcel-swc.linux-x64-musl.node1654457439438999000 0
 92/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/optimizer-css/node_modules1654461613150000000 1
-68/home/omur/code/tailwind-css-sharing-buttons/dist/index.61d3354a.css1654461683900000000 0
+68/home/omur/code/tailwind-css-sharing-buttons/dist/index.61d3354a.css1654465455210000000 0
 66/home/omur/code/tailwind-css-sharing-buttons/node_modules/has-flag1654457455060000000 1
 100/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2017/OrdinaryGetOwnProperty.js1654461609433000000 0
 105/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/core/lib/requests/ParcelBuildRequest.js1654457436177000000 0
@@ -1860,7 +1861,7 @@
 93/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/runtime-js/lib/JSRuntime.js1654457438622999000 0
 88/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2018/DaysInYear.js1654461609433000000 0
 80/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/runtime-js/lib1654457455300000000 1
-71/home/omur/code/tailwind-css-sharing-buttons/dist/index.579125c3.js.map1654461683850000000 0
+71/home/omur/code/tailwind-css-sharing-buttons/dist/index.579125c3.js.map1654461727390000000 0
 109/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/runtime-js/src/helpers/browser/js-loader.js1654457438622999000 0
 88/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2022/CreateHTML.js1654461609433000000 0
 104/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/lib/substituteScreenAtRules.js1654457450473999000 0
@@ -1881,7 +1882,7 @@
 96/home/omur/code/tailwind-css-sharing-buttons/node_modules/svgo/lib/svgo/css-style-declaration.js1654457440964999000 0
 95/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/runtime-js/src/helpers/worker1654457456170000000 1
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/css-tree/lib/syntax/node/Nth.js1654457443069999000 0
-54/home/omur/code/tailwind-css-sharing-buttons/README.md1654460696260000000 0
+54/home/omur/code/tailwind-css-sharing-buttons/README.md1654465183060000000 0
 108/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/runtime-js/src/helpers/node/wasm-loader.js1654457438622999000 0
 95/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/transformer-html/package.json1654457439460999000 0
 85/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/css/node/index.d.ts1654457442542000000 0
@@ -2658,6 +2659,7 @@
 71/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/utils1654457454860000000 1
 80/home/omur/code/tailwind-css-sharing-buttons/node_modules/regexp.prototype.flags1654461612620000000 1
 91/home/omur/code/tailwind-css-sharing-buttons/node_modules/resolve/lib/node-modules-paths.js1654457451332000000 0
+76/home/omur/code/tailwind-css-sharing-buttons/dist/hayatbiralem.7daca41d.jpeg1654463260210000000 0
 147/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/side-effects-package-redirect-up/foo1654457456250000000 1
 82/home/omur/code/tailwind-css-sharing-buttons/node_modules/terser/node_modules/.bin1654461613290000000 1
 85/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2021/ToIndex.js1654461609433000000 0
@@ -3416,7 +3418,7 @@
 103/home/omur/code/tailwind-css-sharing-buttons/node_modules/tailwindcss/lib/util/isValidArbitraryValue.js1654457450473999000 0
 96/home/omur/code/tailwind-css-sharing-buttons/node_modules/postcss-selector-parser/dist/parser.js1654457451279000000 0
 100/home/omur/code/tailwind-css-sharing-buttons/node_modules/css-tree/lib/syntax/function/expression.js1654457443069999000 0
-44/home/omur/code/tailwind-css-sharing-buttons1654461456540000000 1
+44/home/omur/code/tailwind-css-sharing-buttons1654461727360000000 1
 90/home/omur/code/tailwind-css-sharing-buttons/node_modules/yaml/dist/resolveSeq-d03cb037.js1654457445118000000 0
 69/home/omur/code/tailwind-css-sharing-buttons/node_modules/cosmiconfig1654457454940000000 1
 103/home/omur/code/tailwind-css-sharing-buttons/node_modules/@babel/highlight/node_modules/chalk/readme.md1654457449283999000 0
@@ -4866,7 +4868,7 @@
 83/home/omur/code/tailwind-css-sharing-buttons/node_modules/csso/lib/replace/index.js1654457443621000000 0
 109/home/omur/code/tailwind-css-sharing-buttons/node_modules/caniuse-lite/data/features/contentsecuritypolicy.js1654457435915999000 0
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/core/src/projectPath.js1654457436177000000 0
-78/home/omur/code/tailwind-css-sharing-buttons/dist/brain.work-logo.c73b1a23.svg1654461683840000000 0
+78/home/omur/code/tailwind-css-sharing-buttons/dist/brain.work-logo.c73b1a23.svg1654461727390000000 0
 70/home/omur/code/tailwind-css-sharing-buttons/node_modules/assert/build1654461612660000000 1
 92/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/core/src/InternalConfig.js1654457436177000000 0
 75/home/omur/code/tailwind-css-sharing-buttons/node_modules/picomatch/LICENSE1654457451809000000 0
@@ -4974,7 +4976,7 @@
 73/home/omur/code/tailwind-css-sharing-buttons/node_modules/tslib/README.md1654457446328000000 0
 84/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/core/test/fixtures1654457455690000000 1
 100/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/core/test/fixtures/invalid-engines1654457456150000000 1
-70/home/omur/code/tailwind-css-sharing-buttons/dist/favicon.824cf0c5.ico1654461683840000000 0
+70/home/omur/code/tailwind-css-sharing-buttons/dist/favicon.824cf0c5.ico1654461727390000000 0
 90/home/omur/code/tailwind-css-sharing-buttons/node_modules/string.prototype.trimend/auto.js1654461609653000000 0
 113/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/core/test/fixtures/invalid-engines/package.json1654457436177000000 0
 78/home/omur/code/tailwind-css-sharing-buttons/node_modules/acorn/dist/acorn.mjs1654457451799999000 0
@@ -6465,7 +6467,7 @@
 87/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2018/GetMethod.js1654461609433000000 0
 94/home/omur/code/tailwind-css-sharing-buttons/node_modules/string.prototype.trimstart/.eslintrc1654461609759999000 0
 89/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2018/ToPrimitive.js1654461609433000000 0
-74/home/omur/code/tailwind-css-sharing-buttons/dist/screenshot-1024x1024.png1654461683860000000 0
+74/home/omur/code/tailwind-css-sharing-buttons/dist/screenshot-1024x1024.png1654461727390000000 0
 90/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2018/ToUint8Clamp.js1654461609433000000 0
 91/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2018/ToPropertyKey.js1654461609433000000 0
 90/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2018/RegExpCreate.js1654461609433000000 0
@@ -7268,7 +7270,7 @@
 81/home/omur/code/tailwind-css-sharing-buttons/node_modules/object.assign/README.md1654461609752000000 0
 101/home/omur/code/tailwind-css-sharing-buttons/node_modules/es-abstract/2019/CreateListFromArrayLike.js1654461609433000000 0
 88/home/omur/code/tailwind-css-sharing-buttons/node_modules/@jridgewell/trace-mapping/dist1654457455500000000 1
-60/home/omur/code/tailwind-css-sharing-buttons/dist/index.html1654461683940000000 0
+60/home/omur/code/tailwind-css-sharing-buttons/dist/index.html1654465455220000000 0
 114/home/omur/code/tailwind-css-sharing-buttons/node_modules/@parcel/runtime-js/src/helpers/browser/preload-loader.js1654457438622999000 0
 83/home/omur/code/tailwind-css-sharing-buttons/node_modules/posthtml-parser/readme.md1654457442575000000 0
 117/home/omur/code/tailwind-css-sharing-buttons/node_modules/@jridgewell/trace-mapping/dist/types/sourcemap-segment.d.ts1654457446359999000 0
